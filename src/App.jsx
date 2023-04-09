@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React from 'react';
 
 const App = () => {
-  const loadedJobs = useLoaderData();
-  const { jobs } = loadedJobs;
-  console.log(jobs);
-
-  return <div>{}</div>;
+  return <div></div>;
 };
 
 export default App;
