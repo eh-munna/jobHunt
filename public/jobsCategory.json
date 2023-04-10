@@ -2,25 +2,25 @@
   "categories": [
     {
       "id": 1,
-      "category_logo": "../public/images/accounts1.png",
+      "category_logo": "https://i.ibb.co/mJqcTQW/accounts-1.png",
       "category_name": "Account & Finance",
       "job_count": "300 Jobs Available"
     },
     {
       "id": 2,
-      "category_logo": "../public/images/business1.png",
+      "category_logo": "https://i.ibb.co/hWtnHrc/business-1.png",
       "category_name": "Creative Design",
       "job_count": "100+ Jobs Available"
     },
     {
       "id": 3,
-      "category_logo": "../public/images/socialMedia.png",
+      "category_logo": "https://i.ibb.co/x5YRXnz/social-media-1.png",
       "category_name": "Marketing & Sales",
       "job_count": "150 Jobs Available"
     },
     {
       "id": 4,
-      "category_logo": "../public/images/chip1.png",
+      "category_logo": "https://i.ibb.co/tM9QdPM/chip-1.png",
       "category_name": "Engineering Job",
       "job_count": "224 Jobs Available"
     }

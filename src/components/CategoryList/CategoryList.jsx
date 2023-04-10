@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CategoryList = ({ category }) => {
-  console.log(category);
   const { id, category_logo, category_name, job_count } = category;
   return (
     <div className="bg-[#f8f9ff] p-4 md:p-9 rounded-md text-center md:text-left space-y-2 md:space-y-4">
