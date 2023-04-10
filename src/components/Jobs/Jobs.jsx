@@ -5,9 +5,10 @@ import JobTag from '../JobTag/JobTag';
 import CompanyName from '../CompanyName/CompanyName';
 import JobLocation from '../JobLocation/JobLocation';
 import Salary from '../Salary/Salary';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Jobs = ({ job }) => {
+  const navigate = useNavigate();
   const {
     id,
     company_logo,
@@ -32,9 +33,12 @@ const Jobs = ({ job }) => {
         <Salary>{salary}</Salary>
       </div>
       <div>
-        <Button id={job}>
-          <Link to="/statistics">View Details</Link>
-        </Button>
+        <button
+          onClick={() => navigate(`/job-details/${id}`)}
+          className="rounded-md p-2 md:p-4 text-[#ffffff] leading-4 font-bold text-lg bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100%"
+        >
+          View Details
+        </button>
       </div>
     </div>
   );

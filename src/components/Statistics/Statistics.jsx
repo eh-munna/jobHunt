@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Statistics = ({ id }) => {
-  console.log(id);
+const Statistics = () => {
   return <div>Statistics</div>;
 };
 
