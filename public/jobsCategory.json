@@ -1,56 +1,28 @@
 {
   "categories": [
     {
-      "category_logo": "https://example.com/category1_logo.png",
-      "category_name": "Category 1",
-      "jobs_available": [
-        {
-          "job_title": "Job 1",
-          "job_description": "This is job 1 in Category 1",
-          "job_count": "100 jobs available"
-        },
-        {
-          "job_title": "Job 2",
-          "job_description": "This is job 2 in Category 1",
-          "job_count": "100+ jobs available"
-        },
-        {
-          "job_title": "Job 3",
-          "job_description": "This is job 3 in Category 1",
-          "job_count": "50 jobs available"
-        },
-        {
-          "job_title": "Job 4",
-          "job_description": "This is job 4 in Category 1",
-          "job_count": "200+ jobs available"
-        }
-      ]
+      "id": 1,
+      "category_logo": "../public/images/accounts1.png",
+      "category_name": "Account & Finance",
+      "job_count": "300 Jobs Available"
     },
     {
-      "category_logo": "https://example.com/category2_logo.png",
-      "category_name": "Category 2",
-      "jobs_available": [
-        {
-          "job_title": "Job 5",
-          "job_description": "This is job 5 in Category 2",
-          "job_count": "75 jobs available"
-        },
-        {
-          "job_title": "Job 6",
-          "job_description": "This is job 6 in Category 2",
-          "job_count": "150+ jobs available"
-        },
-        {
-          "job_title": "Job 7",
-          "job_description": "This is job 7 in Category 2",
-          "job_count": "100 jobs available"
-        },
-        {
-          "job_title": "Job 8",
-          "job_description": "This is job 8 in Category 2",
-          "job_count": "300+ jobs available"
-        }
-      ]
+      "id": 2,
+      "category_logo": "../public/images/business1.png",
+      "category_name": "Creative Design",
+      "job_count": "100+ Jobs Available"
+    },
+    {
+      "id": 3,
+      "category_logo": "../public/images/socialMedia.png",
+      "category_name": "Marketing & Sales",
+      "job_count": "150 Jobs Available"
+    },
+    {
+      "id": 4,
+      "category_logo": "../public/images/chip1.png",
+      "category_name": "Engineering Job",
+      "job_count": "224 Jobs Available"
     }
   ]
 }
