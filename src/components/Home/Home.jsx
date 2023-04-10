@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import JobCategory from '../JobCategory/JobCategory';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
+import Button from '../Button/Button';
 
 const Home = () => {
   const loadedCategory = useLoaderData();

@@ -2,21 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import vector from '../../images/Vector.png';
 import vector1 from '../../images/Vector-1.png';
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
   const { jobs } = useLoaderData();
   const detailsId = useParams();
   const [details, setDetails] = useState({});
   const navigate = useNavigate();
+  const [cart, setCart] = useState([]);
   useEffect(() => {
-    // fetch('/jobs.json')
-    //   .then((res) => res.json())
-    //   .then((data) => setDetails(data));
     const targetJob = jobs.find((job) => job.id == detailsId.id);
     setDetails(targetJob);
-  }, [jobs]);
+  }, [detailsId]);
   const {
-    company_name,
+    id,
     job_description,
     job_responsibility,
     educational_requirements,
@@ -27,6 +26,11 @@ const JobDetails = () => {
     salary,
     address,
   } = details;
+
+  const addHandler = (id) => {
+    addToDb(id);
+  };
+
   return (
     <div>
       <div className="bg-[#f8f9ff] py-20 relative">
@@ -202,7 +206,7 @@ const JobDetails = () => {
             </div>
           </div>
           <button
-            onClick={() => navigate(`/applied-jobs`)}
+            onClick={() => addHandler(id)}
             className="w-full capitalize rounded-md p-2 md:p-4 text-[#ffffff] leading-4 font-bold text-lg bg-gradient-to-r from-[#7E90FE] from-0% to-[#9873FF] to-100%"
           >
             Apply now

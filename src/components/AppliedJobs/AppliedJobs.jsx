@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Button from '../Button/Button';
 import JobTag from '../JobTag/JobTag';
 import JobLocation from '../JobLocation/JobLocation';
@@ -8,12 +8,13 @@ import CardHeading from '../CardHeading/CardHeading';
 import Salary from '../Salary/Salary';
 
 const AppliedJobs = () => {
+  const jobs = useLoaderData();
+  console.log(jobs);
   return (
     <div>
       <div>
         <img src="here is image" alt="" />
       </div>
-
       <div>
         <CardHeading>Technical</CardHeading>
         <CompanyName>Google LLC</CompanyName>
