@@ -49,7 +49,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <Link to="/">
             <Button>Start Applying</Button>
           </Link>

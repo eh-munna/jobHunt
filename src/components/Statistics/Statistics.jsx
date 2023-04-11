@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
-
+import vector1 from '../../images/Vector-1.png';
 const data = [
   {
     name: 'Basic HTML',
@@ -63,32 +63,40 @@ const data = [
 
 const Statistics = () => {
   return (
-    <div className="container mx-auto py-4 md:py-0 px-6 md:px-12">
-      <div className="my-7 md:my-12 2/3 h-1/2">
-        <ResponsiveContainer width="100%" height={400}>
-          <AreaChart
-            width={500}
-            height={400}
-            data={data}
-            margin={{
-              top: 10,
-              right: 30,
-              left: 0,
-              bottom: 0,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Area
-              type="monotone"
-              dataKey="marks"
-              stroke="#8884d8"
-              fill="#8884d8"
-            />
-          </AreaChart>
-        </ResponsiveContainer>
+    <div>
+      <div className="bg-[#f8f9ff] py-20 relative">
+        <h2 className="text-center text-[#1A1919] text-3xl font-semibold">
+          Statistics
+        </h2>
+      </div>
+      <img className="absolute right-0 top-0" src={vector1} alt="" />
+      <div className="container mx-auto py-4 md:py-0 px-6 md:px-12">
+        <div className="my-7 md:my-12 2/3 h-1/2">
+          <ResponsiveContainer width="100%" height={400}>
+            <AreaChart
+              width={500}
+              height={400}
+              data={data}
+              margin={{
+                top: 10,
+                right: 30,
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Area
+                type="monotone"
+                dataKey="marks"
+                stroke="#8884d8"
+                fill="#8884d8"
+              />
+            </AreaChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );
