@@ -1,26 +1,17 @@
 import { getShoppingCart } from '../utilities/fakedb';
 
 const jobLoaders = async () => {
-  const loadedProducts = await fetch('jobs.json');
-  const products = await loadedProducts.json();
-
-  // if cart data is in database then we have to use async await to asynchronous
-
-  const storedCart = getShoppingCart();
-  // const savedCart = [];
-  // for (const id in storedCart) {
-  //   const addedProduct = products.find((product) => product.id === id);
-  //   if (addedProduct) {
-  //     const quantity = storedCart[id];
-  //     addedProduct.quantity = quantity;
-  //     savedCart.push(addedProduct);
-  //   }
-  // }
-  // if we need to return 2 items as return we have to wrap them in an array or in an object
-  // return [products, savedCart];
-  // return {products, savedCart};
-  // return savedCart;
-  return storedCart;
+  const loadedJobs = await fetch('/jobs.json');
+  const jobs = await loadedJobs.json();
+  const savedJobs = getShoppingCart();
+  let storedJobs = [];
+  for (const id in savedJobs) {
+    const foundJob = jobs.jobs.find((job) => job.id === id);
+    if (foundJob) {
+      storedJobs.push(foundJob);
+    }
+  }
+  return storedJobs;
 };
 
 export default jobLoaders;

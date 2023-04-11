@@ -1,36 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import Button from '../Button/Button';
-import JobTag from '../JobTag/JobTag';
-import JobLocation from '../JobLocation/JobLocation';
-import CompanyName from '../CompanyName/CompanyName';
-import CardHeading from '../CardHeading/CardHeading';
-import Salary from '../Salary/Salary';
+import SavedJobs from '../SavedJobs/SavedJobs';
 
 const AppliedJobs = () => {
-  const jobs = useLoaderData();
-  console.log(jobs);
+  const storedJobs = useLoaderData();
+
   return (
     <div>
-      <div>
-        <img src="here is image" alt="" />
-      </div>
-      <div>
-        <CardHeading>Technical</CardHeading>
-        <CompanyName>Google LLC</CompanyName>
-        <div className="flex gap-2">
-          <JobTag>Remote</JobTag>
-          <JobTag>Fulltime</JobTag>
-        </div>
-        <JobLocation>Location</JobLocation>
-        <Salary></Salary>
-      </div>
-
-      <div>
-        <Link to="">
-          <Button>View Details</Button>
-        </Link>
-      </div>
+      {storedJobs.map((job) => (
+        <SavedJobs key={job.id} job={job}></SavedJobs>
+      ))}
     </div>
   );
 };
