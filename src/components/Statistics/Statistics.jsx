@@ -11,50 +11,50 @@ import {
 import vector1 from '../../images/Vector-1.png';
 const data = [
   {
-    name: 'Basic HTML',
+    name: 'A1',
     marks: 60,
     pv: 2400,
     amt: 2400,
   },
 
   {
-    name: 'Responsive',
+    name: 'A2',
     marks: 60,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: 'Framework',
+    name: 'A3',
     marks: 60,
     pv: 9800,
     amt: 2290,
   },
   {
-    name: 'Basic JS',
+    name: 'A4',
     marks: 50,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: 'DOM',
+    name: 'A5',
     marks: 60,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: 'API',
+    name: 'A6',
     marks: 60,
     pv: 3800,
     amt: 2500,
   },
   {
-    name: 'Debugging',
+    name: 'A7',
     marks: 60,
     pv: 4300,
     amt: 2100,
   },
   {
-    name: 'React',
+    name: 'A8',
     marks: 60,
     pv: 4300,
     amt: 2100,

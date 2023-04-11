@@ -5,9 +5,11 @@ import Salary from '../Salary/Salary';
 import JobLocation from '../JobLocation/JobLocation';
 import JobTag from '../JobTag/JobTag';
 import Button from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const SavedJobs = ({ job }) => {
   const {
+    id,
     job_title,
     company_name,
     remote_or_onsite,
@@ -16,10 +18,13 @@ const SavedJobs = ({ job }) => {
     company_logo,
     location,
   } = job;
+
+  const navigate = useNavigate();
+
   return (
     <div className="container mx-auto py-4 md:py-0 px-6 md:px-12 grid grid-cols-1 my-8 md:my-16 gap-10">
       <div className="flex flex-col md:flex-row gap-10 text-center md:text-left items-center border border-[#E8E8E8] rounded-md p-4">
-        <div>
+        <div className="bg-[#F4F4F4] p-8 md:p-16 rounded-md">
           <img className="mx-auto max-w-full" src={company_logo} alt="" />
         </div>
         <div className="grow space-y-3 md:space-y-5">
@@ -37,7 +42,9 @@ const SavedJobs = ({ job }) => {
           </div>
         </div>
         <div>
-          <Button>View Details</Button>
+          <span onClick={() => navigate(`/job-details/${id}`)}>
+            <Button>View Details</Button>
+          </span>
         </div>
       </div>
     </div>
