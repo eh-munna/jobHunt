@@ -36,7 +36,7 @@ const SavedJobs = ({ job }) => {
             <JobTag>{remote_or_onsite}</JobTag>
             <JobTag>{fulltime_or_parttime}</JobTag>
           </div>
-          <div className="flex gap-2 justify-around items-center md:justify-normal">
+          <div className="flex flex-col md:flex-row gap-2 justify-around items-center md:justify-normal">
             <JobLocation>{location}</JobLocation>
             <Salary>{salary}</Salary>
           </div>

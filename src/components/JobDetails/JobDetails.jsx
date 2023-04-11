@@ -75,7 +75,7 @@ const JobDetails = () => {
           </div>
         </div>
         <div className=" md:col-span-1 ">
-          <div className="p-7 mb-4 rounded-lg bg-[#edeeff]">
+          <div className="p-4 md:p-7 mb-4 rounded-lg bg-[#edeeff]">
             <div className="mb-5">
               <h5 className="text-[#1A1919] text-lg capitalize font-semibold">
                 job details
@@ -178,7 +178,7 @@ const JobDetails = () => {
                 </h5>
               </div>
               <div>
-                <h5 className="text-[#474747] text-base md:text-lg font-semibold inline-flex items-center gap-2">
+                <h5 className="text-[#474747] text-base md:text-lg font-semibold flex items-center gap-1">
                   <span className="text-[#7E90FE]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,8 @@ const JobDetails = () => {
                       />
                     </svg>
                   </span>
-                  Address : <span className="text-[#757575]">{address}</span>
+                  <span className="">Address :</span>
+                  <span className="text-[#757575]">{address}</span>
                 </h5>
               </div>
             </div>
