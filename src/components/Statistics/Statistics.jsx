@@ -9,52 +9,68 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import vector1 from '../../images/Vector-1.png';
-const data = [
+const assignmentData = [
   {
-    name: 'A1',
+    id: 1,
+    assignmentNo: 1,
+    name: 'Basic',
     marks: 60,
     pv: 2400,
     amt: 2400,
   },
 
   {
-    name: 'A2',
+    id: 2,
+    assignmentNo: 2,
+    name: 'Responsive',
     marks: 60,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: 'A3',
+    id: 3,
+    assignmentNo: 3,
+    name: 'Framework',
     marks: 60,
     pv: 9800,
     amt: 2290,
   },
   {
-    name: 'A4',
+    id: 4,
+    assignmentNo: 4,
+    name: 'JS',
     marks: 50,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: 'A5',
+    id: 5,
+    assignmentNo: 5,
+    name: 'DOM',
     marks: 60,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: 'A6',
+    id: 6,
+    assignmentNo: 6,
+    name: 'API',
     marks: 60,
     pv: 3800,
     amt: 2500,
   },
   {
-    name: 'A7',
+    id: 7,
+    assignmentNo: 7,
+    name: 'Debug',
     marks: 60,
     pv: 4300,
     amt: 2100,
   },
   {
-    name: 'A8',
+    id: 8,
+    assignmentNo: 8,
+    name: 'React',
     marks: 60,
     pv: 4300,
     amt: 2100,
@@ -76,7 +92,7 @@ const Statistics = () => {
             <AreaChart
               width={500}
               height={400}
-              data={data}
+              data={assignmentData}
               margin={{
                 top: 10,
                 right: 30,

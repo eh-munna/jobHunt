@@ -13,7 +13,7 @@ const ErrorPage = () => {
         </div>
         <div>
           <h3 className="font-semibold text-lg">
-            You have come to to the wrong page
+            You have come to the wrong page
           </h3>
         </div>
         <div className="py-5">
